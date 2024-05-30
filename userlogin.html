@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .column {
+          float: left;
+          width: 50%;
+          height: 300px; 
+        }
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+         }
+         .row{
+            margin: top: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
+
+         }
+         div{
+            border: 1px solid black;
+         }
+        </style>
+        </head>
+        <body>
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <img src="download.jfif" alt="alternate">
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <form>
+                <center><label for="name">UserName</label><br>
+                <input type="text" name="name" id="name"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br><br>
+                <input type="submit" value="Login"><br>
+                <input type="checkbox" name="rem" id="rem">
+                <label for="rem">Remember me</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Forgot <a href="password">password?</a>
+            </center>
+            </form>
+          </div>
+        </div>
+    </body>
+</html>
