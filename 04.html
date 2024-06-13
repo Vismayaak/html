@@ -6,62 +6,72 @@
     <title>Document</title>
 <style>
     
-    div {
+    .new{
         margin: auto;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .img{
+flex: 33%;
     }
 
     img {
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        
     }
-
-    p {
-        text-align: center;
+    @media (max-width:800px) {
+        .img{
+            flex: 50%;
+            max-width: 50%;
+        }
+        
+    }
+    @media(max-width: 600px){
+        .img{
+            flex: 100%;
+            max-width: 100%;
+        }
     }
 </style>
 </head>
 <body>
     <div class="new">
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Adam Jonson</b></p>
-            <p>Developer</p>
+            <p> Developer</p>    
         </div>
 
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Linda Larson</b></p>
             <p>Manager</p>
         </div>
 
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Marry Hudson</b></p>
             <p>Designer</p>
         </div>
-
-    </div>
-
-    <div class="new">
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Nilna Hudson</b></p>
             <p>Designer</p>
         </div>
 
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Margo Larson</b></p>
             <p>Manager</p>
         </div>
 
-        <div>
+        <div class="img">
             <img src="download.jfif" alt="alternate">
             <p><b>Nicole Scavo</b></p>
             <p>Manager</p>
         </div>
     </div>
-    
 </body>
 </html>
